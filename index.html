@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Airdrop Sybil Inspector — Anti-Fraud Intelligence</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',sans-serif;background:#1a1a00;color:#fef9c3;min-height:100vh}
+.caution{background-image:repeating-linear-gradient(45deg,transparent,transparent 20px,rgba(234,179,8,0.03) 20px,rgba(234,179,8,0.03) 40px)}
+.card{background:rgba(234,179,8,0.06);border:1px solid rgba(234,179,8,0.2);border-radius:16px;transition:all .3s}
+.card:hover{border-color:rgba(234,179,8,0.5);box-shadow:0 0 30px rgba(234,179,8,0.08)}
+.mono{font-family:'Space Mono',monospace}
+</style>
+</head>
+<body class="caution">
+<div class="max-w-7xl mx-auto px-6 py-8">
+  <div class="flex items-center gap-4 mb-8">
+    <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-yellow-400 to-amber-600 flex items-center justify-center">
+      <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+    </div>
+    <div><h1 class="text-2xl font-bold text-white">Sybil Inspector</h1><p class="text-xs text-yellow-400 tracking-wider mono">ANTI-FRAUD INTELLIGENCE</p></div>
+  </div>
+  <div class="grid grid-cols-4 gap-4 mb-6">
+    <div class="card p-5"><p class="text-xs text-yellow-700 mono mb-1">Wallets Screened</p><p class="text-3xl font-bold mono">847K</p></div>
+    <div class="card p-5"><p class="text-xs text-yellow-700 mono mb-1">Sybil Clusters</p><p class="text-3xl font-bold text-red-400 mono">12,847</p></div>
+    <div class="card p-5"><p class="text-xs text-yellow-700 mono mb-1">False Positive Rate</p><p class="text-3xl font-bold text-emerald-400 mono">0.3%</p></div>
+    <div class="card p-5"><p class="text-xs text-yellow-700 mono mb-1">Processing Speed</p><p class="text-3xl font-bold mono">50K<span class="text-lg">/min</span></p></div>
+  </div>
+  <div class="card p-6 mb-6">
+    <h3 class="text-sm font-semibold text-yellow-300 mb-4 mono">SYBIL CLUSTER DETECTED</h3>
+    <div class="grid grid-cols-6 gap-2 mb-4">
+      <div class="p-2 rounded-lg bg-red-500/10 border border-red-500/20 text-center"><p class="text-xs text-red-400 mono">0x7a25...35Fk</p><p class="text-[10px] text-gray-500">Lead wallet</p></div>
+      <div class="p-2 rounded-lg bg-yellow-500/10 border border-yellow-500/20 text-center"><p class="text-xs text-yellow-400 mono">0x8b3c...91Ad</p><p class="text-[10px] text-gray-500">Linked #1</p></div>
+      <div class="p-2 rounded-lg bg-yellow-500/10 border border-yellow-500/20 text-center"><p class="text-xs text-yellow-400 mono">0x4d2e...77Bf</p><p class="text-[10px] text-gray-500">Linked #2</p></div>
+      <div class="p-2 rounded-lg bg-yellow-500/10 border border-yellow-500/20 text-center"><p class="text-xs text-yellow-400 mono">0x1f9a...43Ce</p><p class="text-[10px] text-gray-500">Linked #3</p></div>
+      <div class="p-2 rounded-lg bg-yellow-500/10 border border-yellow-500/20 text-center"><p class="text-xs text-yellow-400 mono">0x6e8d...29Ha</p><p class="text-[10px] text-gray-500">Linked #4</p></div>
+      <div class="p-2 rounded-lg bg-gray-500/10 border border-gray-500/20 text-center"><p class="text-xs text-gray-400 mono">+41 more</p><p class="text-[10px] text-gray-500">Cluster</p></div>
+    </div>
+    <div class="p-4 rounded-xl bg-yellow-500/10 border border-yellow-500/20">
+      <p class="text-sm font-medium mb-1 text-yellow-200">AI Cluster Analysis</p>
+      <p class="text-xs text-gray-400">47 wallets funded from same origin within 3 blocks. Identical swap patterns, gas amounts, and timing. 99.7% confidence sybil cluster. Recommend exclusion from airdrop eligibility. Estimated savings: $2.3M in misallocated tokens.</p>
+    </div>
+  </div>
+  <div class="card p-6">
+    <h3 class="text-sm font-semibold text-yellow-300 mb-4 mono">SCREENING CRITERIA</h3>
+    <div class="grid grid-cols-2 gap-4">
+      <div class="space-y-2">
+        <div class="flex items-center gap-2"><div class="w-3 h-3 rounded-full bg-emerald-500"></div><span class="text-xs text-gray-300">Funding source clustering</span></div>
+        <div class="flex items-center gap-2"><div class="w-3 h-3 rounded-full bg-emerald-500"></div><span class="text-xs text-gray-300">Transaction timing analysis</span></div>
+        <div class="flex items-center gap-2"><div class="w-3 h-3 rounded-full bg-emerald-500"></div><span class="text-xs text-gray-300">Gas amount fingerprinting</span></div>
+      </div>
+      <div class="space-y-2">
+        <div class="flex items-center gap-2"><div class="w-3 h-3 rounded-full bg-emerald-500"></div><span class="text-xs text-gray-300">Behavioral similarity scoring</span></div>
+        <div class="flex items-center gap-2"><div class="w-3 h-3 rounded-full bg-emerald-500"></div><span class="text-xs text-gray-300">On-chain graph analysis</span></div>
+        <div class="flex items-center gap-2"><div class="w-3 h-3 rounded-full bg-emerald-500"></div><span class="text-xs text-gray-300">Device/IP correlation (opt-in)</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
