@@ -1,0 +1,9 @@
+[project]
+name = "agent-sybil-inspector"
+version = "1.0.0"
+description = "Airdrop defense system for wallet graph scoring, behavior similarity, and appeal-ready evidence packs."
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

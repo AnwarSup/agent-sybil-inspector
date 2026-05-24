@@ -1,0 +1,10 @@
+{
+  "scenario": "airdrop eligibility screening",
+  "signals": {
+    "funding_commonality": 50,
+    "tx_timing_similarity": 57,
+    "contract_touch_overlap": 64,
+    "device_proxy_risk": 71,
+    "appeal_confidence": 78
+  }
+}
