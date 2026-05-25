@@ -1,0 +1,150 @@
+{
+  "name": "airdrop_eligibility_screening_batch_2026Q2",
+  "description": "Deterministic sample dataset for Airdrop Sybil Inspector. Mix of organic users and three sybil clusters.",
+  "wallets": [
+    {
+      "address": "0xa11ce0000000000000000000000000000000a001",
+      "age_days": 612,
+      "tx_count": 142,
+      "balance_eth": 1.84,
+      "gas_paid_eth": 0.082,
+      "funding_source": "0xCEXBINANCE_HOTWALLET",
+      "device_hash": "d_alpha",
+      "ip_hash": "ip_alpha",
+      "first_tx_ts": 1690000000,
+      "contracts_touched": ["uniswap_v3", "aave_v3", "lido"]
+    },
+    {
+      "address": "0xa11ce0000000000000000000000000000000a002",
+      "age_days": 540,
+      "tx_count": 87,
+      "balance_eth": 0.92,
+      "gas_paid_eth": 0.034,
+      "funding_source": "0xCEXCOINBASE_HOTWALLET",
+      "device_hash": "d_beta",
+      "ip_hash": "ip_beta",
+      "first_tx_ts": 1692000000,
+      "contracts_touched": ["uniswap_v3", "balancer"]
+    },
+    {
+      "address": "0xa11ce0000000000000000000000000000000a003",
+      "age_days": 401,
+      "tx_count": 65,
+      "balance_eth": 0.51,
+      "gas_paid_eth": 0.021,
+      "funding_source": "0xCEXKRAKEN_HOTWALLET",
+      "device_hash": "d_gamma",
+      "ip_hash": "ip_gamma",
+      "first_tx_ts": 1694000000,
+      "contracts_touched": ["curve", "lido"]
+    },
+    {
+      "address": "0xsybilA000000000000000000000000000000b001",
+      "age_days": 21,
+      "tx_count": 5,
+      "balance_eth": 0.012,
+      "gas_paid_eth": 0.0008,
+      "funding_source": "0xDEPOSITOR_SYBIL_A",
+      "device_hash": "d_sybila",
+      "ip_hash": "ip_sybila",
+      "first_tx_ts": 1716200000,
+      "contracts_touched": ["zksync_era_bridge", "layerzero", "stargate"]
+    },
+    {
+      "address": "0xsybilA000000000000000000000000000000b002",
+      "age_days": 20,
+      "tx_count": 5,
+      "balance_eth": 0.011,
+      "gas_paid_eth": 0.0007,
+      "funding_source": "0xDEPOSITOR_SYBIL_A",
+      "device_hash": "d_sybila",
+      "ip_hash": "ip_sybila",
+      "first_tx_ts": 1716200120,
+      "contracts_touched": ["zksync_era_bridge", "layerzero", "stargate"]
+    },
+    {
+      "address": "0xsybilA000000000000000000000000000000b003",
+      "age_days": 20,
+      "tx_count": 6,
+      "balance_eth": 0.014,
+      "gas_paid_eth": 0.0009,
+      "funding_source": "0xDEPOSITOR_SYBIL_A",
+      "device_hash": "d_sybila",
+      "ip_hash": "ip_sybila",
+      "first_tx_ts": 1716200300,
+      "contracts_touched": ["zksync_era_bridge", "layerzero", "stargate"]
+    },
+    {
+      "address": "0xsybilA000000000000000000000000000000b004",
+      "age_days": 19,
+      "tx_count": 4,
+      "balance_eth": 0.010,
+      "gas_paid_eth": 0.0006,
+      "funding_source": "0xDEPOSITOR_SYBIL_A",
+      "device_hash": "d_sybila",
+      "ip_hash": "ip_sybila",
+      "first_tx_ts": 1716200480,
+      "contracts_touched": ["zksync_era_bridge", "layerzero", "stargate"]
+    },
+    {
+      "address": "0xsybilB000000000000000000000000000000c001",
+      "age_days": 47,
+      "tx_count": 11,
+      "balance_eth": 0.034,
+      "gas_paid_eth": 0.0021,
+      "funding_source": "0xDEPOSITOR_SYBIL_B",
+      "device_hash": "d_sybilb",
+      "ip_hash": "ip_sybilb_1",
+      "first_tx_ts": 1714000000,
+      "contracts_touched": ["arbitrum_bridge", "gmx", "camelot"]
+    },
+    {
+      "address": "0xsybilB000000000000000000000000000000c002",
+      "age_days": 46,
+      "tx_count": 12,
+      "balance_eth": 0.029,
+      "gas_paid_eth": 0.0019,
+      "funding_source": "0xDEPOSITOR_SYBIL_B",
+      "device_hash": "d_sybilb",
+      "ip_hash": "ip_sybilb_2",
+      "first_tx_ts": 1714000260,
+      "contracts_touched": ["arbitrum_bridge", "gmx", "camelot"]
+    },
+    {
+      "address": "0xsybilB000000000000000000000000000000c003",
+      "age_days": 45,
+      "tx_count": 10,
+      "balance_eth": 0.026,
+      "gas_paid_eth": 0.0017,
+      "funding_source": "0xDEPOSITOR_SYBIL_B",
+      "device_hash": "d_sybilb",
+      "ip_hash": "ip_sybilb_3",
+      "first_tx_ts": 1714000520,
+      "contracts_touched": ["arbitrum_bridge", "gmx", "camelot"]
+    },
+    {
+      "address": "0xsybilC000000000000000000000000000000d001",
+      "age_days": 80,
+      "tx_count": 22,
+      "balance_eth": 0.071,
+      "gas_paid_eth": 0.004,
+      "funding_source": "0xMIXER_TORNADO",
+      "device_hash": "d_sybilc1",
+      "ip_hash": "ip_sybilc",
+      "first_tx_ts": 1712000000,
+      "contracts_touched": ["tornado_cash", "stargate", "synapse"]
+    },
+    {
+      "address": "0xsybilC000000000000000000000000000000d002",
+      "age_days": 80,
+      "tx_count": 24,
+      "balance_eth": 0.069,
+      "gas_paid_eth": 0.0042,
+      "funding_source": "0xMIXER_TORNADO",
+      "device_hash": "d_sybilc2",
+      "ip_hash": "ip_sybilc",
+      "first_tx_ts": 1712000180,
+      "contracts_touched": ["tornado_cash", "stargate", "synapse"]
+    }
+  ]
+}
