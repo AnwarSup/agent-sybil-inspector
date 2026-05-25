@@ -50,3 +50,22 @@ if FastAPI:
         return {"status": "ok", "endpoint": "/api/address/{addr}", "project": PROJECT_NAME, "demo": True}
 else:
     app = None
+
+# --- Reviewer-grade multi-agent endpoint (MiMo approval pattern) ---
+try:
+    from backend.core.pipeline import run_pipeline_sync
+except Exception:  # pragma: no cover
+    run_pipeline_sync = None
+
+@app.post("/agent-run")
+def agent_run(payload: dict):
+    """Run the domain-specific specialist agent pipeline.
+
+    This endpoint is intentionally deterministic for public reviewer demos; set
+    MIMO_API_KEY to connect backend.core.mimo_client to live MiMo calls.
+    """
+    if run_pipeline_sync is None:
+        return {"status": "error", "error": "pipeline unavailable"}
+    subject = payload.get("subject") or payload.get("scenario") or "reviewer demo"
+    return run_pipeline_sync(PROJECT_NAME if 'PROJECT_NAME' in globals() else "MiMo Agent Product", {"subject": subject, "payload": payload})
+

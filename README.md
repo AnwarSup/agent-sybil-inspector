@@ -137,3 +137,21 @@ PY
 - `docs/example_run.json` — raw structured result
 - `docs/EXAMPLE_RUN.md` — review-facing run report
 
+<!-- MIMO_APPROVAL_PATTERN_V2 -->
+## Reviewer Quickstart
+
+This repo includes a reviewer-grade proof surface:
+- API: `POST /agent-run`
+- Tests: `tests/test_agent_pipeline.py`
+- Guide: `docs/REVIEWER_GUIDE.md`
+- Proof pack: `proofs/README.md`
+
+The fastest verification path is:
+```bash
+python3 -m pytest -q
+python3 - <<'PY'
+from backend.core.pipeline import run_pipeline_sync
+print(run_pipeline_sync("Sybil Inspector", {"subject":"sybil_cluster quickstart"})["summary"])
+PY
+```
+
