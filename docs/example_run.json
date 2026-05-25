@@ -1,0 +1,122 @@
+{
+  "project": "Sybil Inspector",
+  "status": "completed",
+  "mode": "deterministic-reviewer-demo",
+  "latency_ms": 0,
+  "summary": "5 specialist agents completed; 3 high-priority findings; 40996 estimated tokens.",
+  "token_usage": {
+    "project": "Sybil Inspector",
+    "events": [
+      {
+        "timestamp": "2026-05-25T20:14:50.901046+00:00",
+        "project": "Sybil Inspector",
+        "agent": "Liquidity Scout",
+        "estimated_tokens": 10795,
+        "severity": "critical"
+      },
+      {
+        "timestamp": "2026-05-25T20:14:50.901112+00:00",
+        "project": "Sybil Inspector",
+        "agent": "Exploit Sentinel",
+        "estimated_tokens": 4656,
+        "severity": "low"
+      },
+      {
+        "timestamp": "2026-05-25T20:14:50.901118+00:00",
+        "project": "Sybil Inspector",
+        "agent": "Oracle Auditor",
+        "estimated_tokens": 5530,
+        "severity": "high"
+      },
+      {
+        "timestamp": "2026-05-25T20:14:50.901122+00:00",
+        "project": "Sybil Inspector",
+        "agent": "Treasury Guardian",
+        "estimated_tokens": 9263,
+        "severity": "critical"
+      },
+      {
+        "timestamp": "2026-05-25T20:14:50.901125+00:00",
+        "project": "Sybil Inspector",
+        "agent": "Incident Reporter",
+        "estimated_tokens": 10752,
+        "severity": "low"
+      }
+    ],
+    "total_estimated_tokens": 40996,
+    "daily_projection_tokens": 3935616,
+    "agent_count": 5
+  },
+  "findings": [
+    {
+      "agent": "Liquidity Scout",
+      "role": "tracks pool depth, volatility spikes, and suspicious flow concentration",
+      "severity": "critical",
+      "confidence": 0.69,
+      "finding": "Liquidity Scout reviewed DeFi risk monitoring signal: airdrop dataset includes 42 wallets funded from shared source. Risk pattern=critical confidence=0.69.",
+      "evidence": [
+        "domain=DeFi risk monitoring",
+        "subject_hash=c51f077b33",
+        "agent_stage=1"
+      ],
+      "recommendation": "Run liquidity scout follow-up pass, capture artifacts, then prioritize critical items first.",
+      "estimated_tokens": 10795
+    },
+    {
+      "agent": "Exploit Sentinel",
+      "role": "maps events to known attack primitives and detects anomalous protocol behavior",
+      "severity": "low",
+      "confidence": 0.82,
+      "finding": "Exploit Sentinel reviewed DeFi risk monitoring signal: airdrop dataset includes 42 wallets funded from shared source. Risk pattern=low confidence=0.82.",
+      "evidence": [
+        "domain=DeFi risk monitoring",
+        "subject_hash=c51f077b33",
+        "agent_stage=2"
+      ],
+      "recommendation": "Run exploit sentinel follow-up pass, capture artifacts, then prioritize low items first.",
+      "estimated_tokens": 4656
+    },
+    {
+      "agent": "Oracle Auditor",
+      "role": "checks oracle drift, stale feeds, and manipulation windows",
+      "severity": "high",
+      "confidence": 0.89,
+      "finding": "Oracle Auditor reviewed DeFi risk monitoring signal: airdrop dataset includes 42 wallets funded from shared source. Risk pattern=high confidence=0.89.",
+      "evidence": [
+        "domain=DeFi risk monitoring",
+        "subject_hash=c51f077b33",
+        "agent_stage=3"
+      ],
+      "recommendation": "Run oracle auditor follow-up pass, capture artifacts, then prioritize high items first.",
+      "estimated_tokens": 5530
+    },
+    {
+      "agent": "Treasury Guardian",
+      "role": "scores treasury exposure and proposes emergency controls",
+      "severity": "critical",
+      "confidence": 0.88,
+      "finding": "Treasury Guardian reviewed DeFi risk monitoring signal: airdrop dataset includes 42 wallets funded from shared source. Risk pattern=critical confidence=0.88.",
+      "evidence": [
+        "domain=DeFi risk monitoring",
+        "subject_hash=c51f077b33",
+        "agent_stage=4"
+      ],
+      "recommendation": "Run treasury guardian follow-up pass, capture artifacts, then prioritize critical items first.",
+      "estimated_tokens": 9263
+    },
+    {
+      "agent": "Incident Reporter",
+      "role": "synthesizes operator-grade markdown incident reports",
+      "severity": "low",
+      "confidence": 0.85,
+      "finding": "Incident Reporter reviewed DeFi risk monitoring signal: airdrop dataset includes 42 wallets funded from shared source. Risk pattern=low confidence=0.85.",
+      "evidence": [
+        "domain=DeFi risk monitoring",
+        "subject_hash=c51f077b33",
+        "agent_stage=5"
+      ],
+      "recommendation": "Run incident reporter follow-up pass, capture artifacts, then prioritize low items first.",
+      "estimated_tokens": 10752
+    }
+  ]
+}

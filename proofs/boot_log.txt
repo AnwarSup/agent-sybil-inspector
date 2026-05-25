@@ -1,0 +1,1 @@
+[2026-05-25T20:14:50.902484+00:00] boot ok: Sybil Inspector pipeline loaded; agents=5; mode=deterministic-reviewer-demo

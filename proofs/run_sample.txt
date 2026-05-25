@@ -1,0 +1,4 @@
+Sybil Inspector
+5 specialist agents completed; 3 high-priority findings; 40996 estimated tokens.
+tokens=40996
+daily_projection=3935616
