@@ -34,7 +34,7 @@ def run_specialist_agents(payload: Dict[str, Any]) -> List[Dict[str, Any]]:
     subject = str(payload.get("subject") or payload.get("scenario") or payload.get("input") or "airdrop dataset includes 42 wallets funded from shared source")
     findings: List[AgentFinding] = []
     for idx, (name, role) in enumerate(SPECIALISTS, 1):
-        raw = _score(subject, idx)
+        raw = _score(f"{subject}:{name}", idx)
         severity = SEVERITIES[raw % len(SEVERITIES)]
         confidence = round(0.62 + ((raw % 31) / 100), 2)
         tokens = 4200 + (raw % 9600)
